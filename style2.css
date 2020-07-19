@@ -2,14 +2,14 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0em;
 }
   
 .username {
-    margin: .5em 1em 5em .6em;
-    padding: 6px 8px 6px 16px;   
+    margin: 1em;
+    padding-left: 0.5em;
     font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
- 
+    
 }
 
 .title {
@@ -24,15 +24,15 @@ body {
 
 .sidenav {
     background-color: white;
-    height: 100%;
-    width: 13.7em;
-    position: fixed;
+    height: auto;
+    width: 100%;
+    position: relative;
     z-index: 1;
     top: 0;
     left: 0;
     overflow-x: hidden;
     padding-top: 20px;
-    box-shadow: .5px 3px 5px rgb(163, 163, 163);
+    
 }
 
 .sidenav a, .dropdown-btn {
@@ -50,7 +50,6 @@ body {
     margin: 1em 0;
 }
 
-
 .sidenav a{ 
     border-top-left-radius: 3em;
     border-bottom-left-radius: 3em;
@@ -66,7 +65,6 @@ body {
 }
 
 .dropdown-container {
-    
     display: none;
     padding-left: 1.5em;
   }
@@ -77,9 +75,7 @@ body {
 }
 
 .footer {
-    height:94px;
-    width:100%;
-    position: absolute;
+    
     bottom:0;
     background-image: linear-gradient(#C4162E,#831120);
 }
@@ -96,14 +92,12 @@ body {
 }
 
 .dashboard {
-    margin-left: 15em;
-    padding: 1em;
+    padding: .5em;
+    text-align: center;
 }
 
 .profile {
-    position: absolute;
-    top: 1em;
-    right: 3em;
+    text-align: center;
     
 }
 
@@ -127,16 +121,13 @@ body {
 }
 
 .cards {
-    margin: 1em;
-    margin-top: 2.5 em;
-    display: flex;  
-                          
+    margin: .5em;
+    margin-top: 2.5 em;                          
 }
 
-
 .card-1, .card-2, .card-3 {
-    padding: 2em;
-    margin: 2em;
+    padding: 2em 4em;
+    margin: 1em;
     border: none;
     border-radius: .5em;
     box-shadow: .5px 3px 5px rgb(163, 163, 163);
@@ -145,22 +136,20 @@ body {
 .card-1 {
     background-image: linear-gradient(to right, #E85848,#FDEC25);
     display: flex;
-    padding: 1.5em 13em;
-    text-align: center;
+    padding: 1.5em 10em;
+    
 }
 
 .card-1 h3{ 
     color: white;
     font-weight: bold;
     text-align: center;
-
 }
 
 .card-1 span{
     color: white;
-    text-align: center;
-    font-size: 95px;
-    margin: 10px;
+    font-size: 90px;
+    margin: 0px;
 }
 
 .card-head, .card-2 p{
@@ -173,37 +162,57 @@ body {
     text-align: center;
 }
 
+
 .card-2 img {
-    height: 219px;
-    width: 461px;
+    height: 100%;
+    width: 100%;
     
 }
 
 .card-2 p {
-    margin: .5em 2em;
-    padding: 0 1em;
+    margin: 1em;
+    
 }
 
-.card-3 {
-    text-align: center;
-    height: fit-content;
+.bottom-btn {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+        "left right";
+    border-radius: .5em;
+    box-shadow: .5px 3px 5px rgb(163, 163, 163);
+    
+    
+}
+
+.left-btn {
+    grid-area: left;
+}
+
+.right-btn {
+    grid-area: right;
+    background-color: #F9B600;
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+    color: white;
+    
+}
+
+.right-btn:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #F9B600 ;
 }
 
 .card-3 p {
     font-size: 17px;
-    padding: 1em;
+    margin-top: 1em;
    
-}
-
-.card-head {
-    padding: .5em 3em;
-    font-size: 24px;
-    
 }
 
 .option-box {
     padding: 1em;
-    width: 35em;
+    width: 100%;
     border: none;
     border-radius: 3em;
     box-shadow: .5px 3px 5px rgb(163, 163, 163);
@@ -231,35 +240,125 @@ select:required:invalid {
     border-radius: 3em;
     padding: .5em 2em;
     margin: 2em;
+}
+
+@media (min-width: 930px) {
+
+    .sidenav {
+        background-color: white;
+        height: 100%;
+        width: 13.7em;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+        box-shadow: .5px 3px 5px rgb(163, 163, 163);
+    }
+    
+    .footer {
+        height:94px;
+        width:100%;
+        position: absolute;
+        bottom:0;
+        background-image: linear-gradient(#C4162E,#831120);
+    }
+    
+    .footer p {
+        color: white;
+        font-weight: bold;
+        padding: .2em;
+        margin-left: 0.4em;
+    }
+    
+    .tel {
+        text-align: center;
+    }
+    
+    .dashboard {
+        margin-left: 15em;
+        padding: 1em;
+        text-align: left;
+    }
+    
+    .profile {
+        position: absolute;
+        top: 1em;
+        right: 3em;
+        
+    }
     
     
-}
-
-.bottom-btn {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-areas: 
-        "left right";
-    border-radius: .5em;
-    box-shadow: .5px 3px 5px rgb(163, 163, 163);
-    margin: 1em 6em 0px;
-}
-
-.left-btn {
-    grid-area: left;
-}
-
-.right-btn {
-    grid-area: right;
-    background-color: #F9B600;
-    border-top-right-radius: .5em;
-    border-bottom-right-radius: .5em;
-    color: white;
+    .cards {
+        display: flex;  
+                              
+    }
     
-}
+    .card-2 img {
+        height: 219px;
+        width: 461px;
+        
+    }
+    
+    .card-2 p {
+        margin: .5em 2em;
+        padding: 0 1em;
+    }
 
-.right-btn:hover{
-    text-decoration: none;
-    color: white;
-    background-color: #F9B600 ;
+    .bottom-btn {
+        margin: 1em 6em 0px;
+        
+    }
+    
+    .card-3 {
+        text-align: center;
+        height: fit-content;
+    }
+    
+    .card-3 p {
+        font-size: 17px;
+        padding: 1em;
+       
+    }
+    
+    .card-head {
+        padding: .5em 3em;
+        font-size: 24px;
+        
+    }
+    
+    .option-box {
+        padding: 1em;
+        width: 35em;
+        border: none;
+        border-radius: 3em;
+        box-shadow: .5px 3px 5px rgb(163, 163, 163);
+        margin: 1em 0;
+    }
+    
+    
+    select:required:invalid {
+        color: #666;
+        
+      }
+      option[value=""][disabled] {
+        display: none;
+        
+      }
+      option {
+        color: black;
+        padding: 2em;
+      }
+    
+    .card-3 button {
+        color: white;
+        background-color: #C4162E;
+        border: none;
+        border-radius: 3em;
+        padding: .5em 2em;
+        margin: 2em;
+    }
+    
+    
 }
