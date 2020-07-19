@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,400&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.username {
+    margin: .5em 1em 5em .6em;
+    padding: 6px 8px 6px 16px;   
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+ 
+}
+
+.title {
+    padding: .8em 8px .8em 16px;
+    margin-bottom: .5em;
+    font-weight: bold;
+    background-image: linear-gradient(#C4162E,#831120);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.sidenav {
+    background-color: white;
+    height: 100%;
+    width: 13.7em;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    box-shadow: .5px 3px 5px rgb(163, 163, 163);
+}
+
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;  
+    margin: 1em 0;
+}
+
+
+.sidenav a{ 
+    border-top-left-radius: 3em;
+    border-bottom-left-radius: 3em;
+    margin: 1em;
+   
+    
+}
+
+.sidenav a:hover {
+    background-image: linear-gradient(#C4162E,#831120);
+    color: white;
+   
+}
+
+.dropdown-container {
+    
+    display: none;
+    padding-left: 1.5em;
+  }
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.footer {
+    height:94px;
+    width:100%;
+    position: absolute;
+    bottom:0;
+    background-image: linear-gradient(#C4162E,#831120);
+}
+
+.footer p {
+    color: white;
+    font-weight: bold;
+    padding: .2em;
+    margin-left: 0.4em;
+}
+
+.tel {
+    text-align: center;
+}
+
+.dashboard {
+    margin-left: 15em;
+    padding: 1em;
+}
+
+.profile {
+    position: absolute;
+    top: 1em;
+    right: 3em;
+    
+}
+
+.account {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background-color: #F9B600;
+    padding: .5em 2em;
+    border: none;
+    border-radius: 3em;
+    margin-right: .6em;
+}
+
+.glyphicon {
+    background-color: #F9B600;
+    padding: .5em;
+    color: white;
+    padding: .7em;
+    border-radius: 3em;
+}
+
+.cards {
+    margin: 1em;
+    margin-top: 2.5 em;
+    display: flex;  
+                          
+}
+
+
+.card-1, .card-2, .card-3 {
+    padding: 2em;
+    margin: 2em;
+    border: none;
+    border-radius: .5em;
+    box-shadow: .5px 3px 5px rgb(163, 163, 163);
+}
+
+.card-1 {
+    background-image: linear-gradient(to right, #E85848,#FDEC25);
+    display: flex;
+    padding: 1.5em 13em;
+    text-align: center;
+}
+
+.card-1 h3{ 
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.card-1 span{
+    color: white;
+    text-align: center;
+    font-size: 95px;
+    margin: 10px;
+}
+
+.card-head, .card-2 p{
+    color: #831120;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-2 {
+    text-align: center;
+}
+
+.card-2 img {
+    height: 219px;
+    width: 461px;
+    
+}
+
+.card-2 p {
+    margin: .5em 2em;
+    padding: 0 1em;
+}
+
+.card-3 {
+    text-align: center;
+    height: fit-content;
+}
+
+.card-3 p {
+    font-size: 17px;
+    padding: 1em;
+   
+}
+
+.card-head {
+    padding: .5em 3em;
+    font-size: 24px;
+    
+}
+
+.option-box {
+    padding: 1em;
+    width: 35em;
+    border: none;
+    border-radius: 3em;
+    box-shadow: .5px 3px 5px rgb(163, 163, 163);
+    margin: 1em 0;
+}
+
+
+select:required:invalid {
+    color: #666;
+    
+  }
+  option[value=""][disabled] {
+    display: none;
+    
+  }
+  option {
+    color: black;
+    padding: 2em;
+  }
+
+.card-3 button {
+    color: white;
+    background-color: #C4162E;
+    border: none;
+    border-radius: 3em;
+    padding: .5em 2em;
+    margin: 2em;
+    
+    
+}
+
+.bottom-btn {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+        "left right";
+    border-radius: .5em;
+    box-shadow: .5px 3px 5px rgb(163, 163, 163);
+    margin: 1em 6em 0px;
+}
+
+.left-btn {
+    grid-area: left;
+}
+
+.right-btn {
+    grid-area: right;
+    background-color: #F9B600;
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+    color: white;
+    
+}
+
+.right-btn:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #F9B600 ;
+}

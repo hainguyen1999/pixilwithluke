@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <section class="sidenav">
+        <div class="username">Douglas Potter</div>
+
+        <p class="title ">Dashboard</p>
+
+        <button class="dropdown-btn">Mes documents
+            <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="dropdown-container">
+            <a class="dropdown-item" href="#">Commandes</a>
+            <a class="dropdown-item" href="#">Bons de livraison</a>
+            <a class="dropdown-item" href="#">Traçabilité</a>
+            <a class="dropdown-item" href="#">Factures</a>
+        </div>
+
+        <div class="footer">
+            <p>Vous avez une question ?</p>
+            <p class="tel">01 46 01 57 67</p>
+        </div>
+
+    </section>
+
+    <section class="dashboard">
+        <h5>Dashboard</h5>
+        <div class="profile">
+            <a href="#" class="account"><i class="fa fa-fw fa-user"></i>Mon Profil</a>
+            <span class="glyphicon glyphicon-log-out"></span>
+        </div>
+        <div class="cards">
+            <div class="card-left ">
+                <div class="card-1">
+                    <span class="fa fa-user-o" aria-hidden="true"></span>
+                    <h3>Bienvenu dans votre espace</h3>
+                </div>
+                <div class="card-2">
+                        <div class="card-head">Offre du moment</div>
+                        <img src="/image/food.jpg" alt="">
+                        <p>-20% sur les 500G de viande de bourguignon</p>
+                        <div class="bottom-btn">
+                            <div class="left-btn">0609080705</div>
+                            <a href="#" class="right-btn">Etre rappelé</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="card-3">
+                <div class="card-head">Sélectionnez le client que vous
+                    souhaitez consulter</div>
+                <p>Si vous ne sélectionnez aucun client, vous aurez accès à
+                    vos documents (commandes, bon de livraison et facture)
+                    de client plateforme</p>
+                <div>
+                    <select name="option" required class="option-box"> 
+                        <option value="" disabled selected hidden>Choisir le compte client </option>
+                        <option value="Compte n°1">Compte n°1</option>
+                        <option value="Compte n°2">Compte n°2</option>
+                        <option value="Compte n°3">Compte n°3</option>
+                        <option value="Compte n°3">Compte n°3</option>
+                    </select>
+                    </div>
+                <button>Aller sur le compte</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding
+        and showing its dropdown content - 
+        This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
