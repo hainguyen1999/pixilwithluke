@@ -45,7 +45,7 @@ body {
     border: none;
 }
 
-input[type=button] {
+input[type=submit] {
     background-image: linear-gradient(#C4162E,#831120);
     margin-top: 1.5em;
     margin-bottom: 0.4em;
