@@ -15,6 +15,11 @@ body {
   
 }
 
+.logo:hover {
+    color: transparent;
+}
+
+
 
 .left {
     background-color: white;
@@ -25,18 +30,30 @@ body {
 .left p{
     margin-top: 3em;
     margin-bottom: 1em;
-    font-size: large;
+    font-size: 1.5em;
 }
 
 .form-input {
-    margin: 1em 0;
-    padding: 1.5em;
-    width: 95%;
-    border-radius: 3em;
-    box-shadow: 5px 10px 20px rgb(163, 163, 163);;
     border: none;
+    width: 90%;
 }
 
+.input-container {
+    text-align: left;
+    border: none;
+    margin: 2.5em 0;
+    padding: 1.5em;
+    width: 100%;
+    border-radius: 3em;
+    box-shadow: 2px 5px 10px rgb(163, 163, 163);
+}
+
+.form-contain {
+    margin-bottom: -2em;
+}
+.input-container span {
+    font-size: 1.4em;
+}
 
 input[type=submit] {
     background-image: linear-gradient(#C4162E,#831120);
@@ -59,7 +76,7 @@ input[type=submit] {
 }
 
 .right {
-    background-color: #831120;
+    background-image: linear-gradient(to bottom right,#AC1429,#831120);
     padding: 2em;
  }
 
@@ -112,6 +129,11 @@ button {
     grid-area: right;
 }
 
+.right h1 {
+    margin-bottom: 1em;
+    padding: .7em;
+}
+
 .left {
     
     background-color: white;
@@ -123,7 +145,7 @@ button {
 .right {
     margin: -2em 0;
     padding: 4em 0;
-   background-color: #831120;
+    
     border-top-right-radius: 3em;
     border-bottom-right-radius: 3em;
     display: flex;
