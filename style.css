@@ -36,13 +36,14 @@ body {
 .form-input {
     border: none;
     width: 90%;
+    height: 2em;
 }
 
 .input-container {
     text-align: left;
     border: none;
     margin: 2.5em 0;
-    padding: 1.5em;
+    padding: 1.3em;
     width: 100%;
     border-radius: 3em;
     box-shadow: 2px 5px 10px rgb(163, 163, 163);
@@ -51,9 +52,12 @@ body {
 .form-contain {
     margin-bottom: -2em;
 }
-.input-container span {
-    font-size: 1.4em;
+
+.input-container .icon {
+    font-size: 1.3em;
 }
+
+
 
 input[type=submit] {
     background-image: linear-gradient(#C4162E,#831120);
@@ -93,13 +97,12 @@ button {
     background-image: linear-gradient(#F9B600,#F97300);
     margin-top: 1.5em;
     margin-bottom: 0.4em;
-    padding: .6em 0;
+    padding: .8em 0;
     width: 16em;
     color: white;
     font-weight: bold;
     cursor: pointer;
-    
-    
+    font-size: large;
 }
 
 @media (min-width: 930px) {
