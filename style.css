@@ -8,28 +8,30 @@ body {
 .logo {
     background-image: url("/image/logo.png");
     padding: 3em;
+    
     background-position: center;
     background-repeat: no-repeat;
     color: transparent;
   
 }
+
+
 .left {
     background-color: white;
-    
     padding: 4em;
 
 }
 
 .left p{
-    margin-top: 4em;
+    margin-top: 3em;
     margin-bottom: 1em;
     font-size: large;
 }
 
 .form-input {
-    margin: 1.5em 0;
+    margin: 1em 0;
     padding: 1.5em;
-    width: 90%;
+    width: 95%;
     border-radius: 3em;
     box-shadow: 5px 10px 20px rgb(163, 163, 163);;
     border: none;
@@ -38,9 +40,9 @@ body {
 
 input[type=submit] {
     background-image: linear-gradient(#C4162E,#831120);
-    margin-top: 1.5em;
+    margin-top: 2.5em;
     margin-bottom: 0.4em;
-    padding: 1em 0;
+    padding: .8em 0;
     border-radius: 3em;
     width: 15em;
     border: none;
@@ -58,7 +60,7 @@ input[type=submit] {
 
 .right {
     background-color: #831120;
-    padding: 4em;
+    padding: 2em;
  }
 
 .right h1{
@@ -74,15 +76,19 @@ button {
     background-image: linear-gradient(#F9B600,#F97300);
     margin-top: 1.5em;
     margin-bottom: 0.4em;
-    padding: .5em 0;
-    width: 13em;
+    padding: .6em 0;
+    width: 16em;
     color: white;
     font-weight: bold;
     cursor: pointer;
+    
+    
 }
 
 @media (min-width: 930px) {
-.container {
+.contain {
+    padding: 2em 0;
+    width: 70%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -94,6 +100,7 @@ button {
     grid-template-columns: repeat(2, 50%);
     grid-template-areas: 
         "left right";
+    
 }
 
 .left {
@@ -106,8 +113,7 @@ button {
 }
 
 .left {
-    padding: 3em;
-    padding-top: 4em;
+    
     background-color: white;
     border-top-left-radius: 3em;
     border-bottom-left-radius: 3em;
@@ -115,12 +121,15 @@ button {
 
 
 .right {
+    margin: -2em 0;
+    padding: 4em 0;
    background-color: #831120;
     border-top-right-radius: 3em;
     border-bottom-right-radius: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 
