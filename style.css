@@ -116,15 +116,15 @@ button {
 
 .right {
    background-color: #831120;
-   padding: 2em;
+   
     border-top-right-radius: 3em;
     border-bottom-right-radius: 3em;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-.right-container {
-   padding-top: 50%;
-   padding-bottom: 50%;
-}
+
 }
 
