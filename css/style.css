@@ -15,7 +15,19 @@ html, body {
 }
 
 /* CSS Variables */
-/* font family variables */
+:root {
+  --primary-color: #00A6D7;
+  --primary-color2: #0058B3;
+  --title-color: #141313;
+  --text-color: #777777;
+  --border-color: #201f1f17;
+  --gradient-color: linear-gradient(90deg, #0058B3 0%, #00A6D7 100%);
+  --shadow-color: 0px 10px 30px rgba(118,85,225,0.3);
+  --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+  /* font family variables */
+  --montserrat: 'Montserrat',cursive;
+}
+
 /*global*/
 /*global classes*/
 .title-text {
@@ -29,7 +41,7 @@ html, body {
 /*buttons*/
 .button {
   padding: .8rem 2.2rem;
-  font: normal 500 16px/20px var(--roboto);
+  font: normal 500 16px/20px var(--montserrat);
   position: relative;
   border: none;
   border-radius: 4px;
@@ -134,24 +146,22 @@ p.para {
 }
 
 #header_area .main-menu .nav-item .nav-link {
-  font-family: "Montserrat", cursive;
+  font-family: var(--montserrat);
   text-transform: uppercase;
   font-weight: 500;
   padding: 1.2rem;
-  color: #141313;
+  color: var(--title-color);
 }
 
 #header_area .main-menu .navbar-nav .active a {
-  background: -webkit-gradient(linear, left top, right top, from(#0058B3), to(#00A6D7));
-  background: linear-gradient(90deg, #0058B3 0%, #00A6D7 100%);
+  background: var(--gradient-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 #header_area .main-menu .navbar-nav a:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#0058B3), to(#00A6D7));
-  background: linear-gradient(90deg, #0058B3 0%, #00A6D7 100%);
+  background: var(--gradient-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -233,7 +243,7 @@ p.para {
 
 .site-main #about-area .about-title h2 > span {
   display: block;
-  font: normal bold 49px/60px "Montserrat", cursive;
+  font: normal bold 49px/60px var(--montserrat);
   letter-spacing: 21px;
 }
 
@@ -255,7 +265,7 @@ p.para {
 }
 
 .site-main #artwork-area .artwork-title h1 {
-  color: #0058B3;
+  color: var(--primary-color2);
   font-size: 35px;
 }
 
@@ -272,19 +282,19 @@ p.para {
 }
 
 .site-main #artwork-area .owl-carousel .owl-dots .owl-dot span {
-  background-color: #00A6D7;
+  background-color: var(--primary-color);
   opacity: 0.5;
   -webkit-transition: background ease .3s;
   transition: background ease .3s;
 }
 
 .site-main #artwork-area .owl-carousel .owl-dots .owl-dot span:hover {
-  background-color: #0058B3;
+  background-color: var(--primary-color2);
   opacity: 1;
 }
 
 .site-main #artwork-area .owl-carousel .owl-dots .owl-dot.active span {
-  background-color: #0058B3;
+  background-color: var(--primary-color2);
   opacity: 1;
   width: 23px;
   height: 13px;
@@ -339,8 +349,8 @@ p.para {
 }
 
 .site-main > #services-area .services:hover {
-  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
 }
 
 /* End Services area */
@@ -355,7 +365,7 @@ p.para {
 
 .site-main #blog-area .blog-title h1 {
   font-size: 40px;
-  color: #0058B3;
+  color: var(--primary-color2);
 }
 
 .site-main #blog-area .blog-list {
@@ -372,8 +382,8 @@ p.para {
 }
 
 .site-main #blog-area .blog-list .blog-card:hover {
-  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
 }
 
 .site-main #blog-area .blog-list img {
@@ -387,22 +397,22 @@ p.para {
 }
 
 .site-main #blog-area .blog-list .news-content .date {
-  font-family: "Montserrat", cursive;
+  font-family: var(--montserrat);
 }
 
 .site-main #blog-area .blog-list .news-content h5 {
-  font-family: "Montserrat", cursive;
+  font-family: var(--montserrat);
   font-weight: bold;
-  color: #0058B3;
+  color: var(--primary-color2);
 }
 
 .site-main #blog-area .blog-list .news-content a {
-  color: #0058B3;
+  color: var(--primary-color2);
 }
 
 .site-main #blog-area .blog-list .news-content a:hover {
   text-decoration: none;
-  color: #00A6D7;
+  color: var(--primary-color);
 }
 
 .site-main #blog-area .blog-link {
@@ -411,12 +421,12 @@ p.para {
 }
 
 .site-main #blog-area .blog-link a {
-  color: #00A6D7;
+  color: var(--primary-color);
 }
 
 .site-main #blog-area .blog-link a:hover {
   text-decoration: none;
-  color: #0058B3;
+  color: var(--primary-color2);
 }
 
 /*  End Blog Area */
@@ -459,7 +469,7 @@ p.para {
 }
 
 .site-main #subscribe-us-area .subscribe .subscribe-title h4 {
-  font: normal 700 30px/30px "Montserrat", cursive;
+  font: normal 700 30px/30px var(--montserrat);
   color: whitesmoke;
 }
 
@@ -474,12 +484,12 @@ p.para {
   border: 1px solid whitesmoke;
   background: transparent;
   color: white;
-  font: normal 500 17px/20px "Montserrat", cursive;
+  font: normal 500 17px/20px var(--montserrat);
 }
 
 .site-main #subscribe-us-area .subscribe form .input-textbox input:hover {
-  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
 }
 
 .site-main #subscribe-us-area .subscribe form .input-textbox input::-webkit-input-placeholder {
@@ -500,7 +510,7 @@ p.para {
 
 .site-main #subscribe-us-area .subscribe form .btn-submit button {
   background: whitesmoke;
-  color: #0058B3;
+  color: var(--primary-color2);
   padding: .7rem 2rem;
   float: right;
   border: none;
@@ -509,9 +519,9 @@ p.para {
 }
 
 .site-main #subscribe-us-area .subscribe form .btn-submit button:hover {
-  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-  color: #00A6D7;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  color: var(--primary-color);
 }
 
 /* End Subscribe Area */
@@ -527,7 +537,7 @@ footer#footer-area {
 }
 
 footer#footer-area .social h5 {
-  font: normal 500 23px/30px "Montserrat", cursive;
+  font: normal 500 23px/30px var(--montserrat);
 }
 
 footer#footer-area .social a > i {
@@ -539,7 +549,7 @@ footer#footer-area .social a > i {
 }
 
 footer#footer-area .social a:hover > i {
-  color: #00A6D7;
+  color: var(--primary-color);
 }
 
 footer#footer-area .copyright .para {
