@@ -2,7 +2,7 @@
 /*global classes*/
 
 .title-text {
-    font: normal bold 50px/62px var(--montserrat);
+    font: normal bold 50px/62px $montserrat;
 }
 
 .text-uppercase {
@@ -12,24 +12,24 @@
 /*buttons*/
 .button{
     padding: .8rem 2.2rem;
-    font: normal 500 16px/20px var(--roboto);
+    font: normal 500 16px/20px $roboto;
     position: relative;
     border: none;
     border-radius: 4px;
 }
 
 .button.primary-button{
-    background: var(--gradient-color);
+    background: $gradient-color;
     background-clip: padding-box;
     color: whitesmoke;
     transition: color .4s ease;
-    box-shadow: var(--box-shadow);
+    box-shadow: $box-shadow;
 }
 
 .button.primary-button:hover{
     background: whitesmoke;
     background-clip: padding-box;
-    color: var(--primary-color);
+    color: $primary-color;
     
 }
 
@@ -37,7 +37,7 @@
     position: absolute;
     top: -1px; left: -1px;
     bottom: -1px;  right: -1px;
-    background: var(--gradient-color);
+    background: $gradient-color;
     content: ' ';
     z-index: -1;
     border-radius: 5px;
@@ -47,24 +47,24 @@
     background: white;
     background-clip: padding-box;
     transition: color .6s ease;
-    color: var(--primary-color);
-    box-shadow: var(--box-shadow);
+    color: $primary-color;
+    box-shadow: $box-shadow;
 }
 
 .button.secondary-button:hover{
-    background: var(--gradient-color);
+    background: $gradient-color;
     color: whitesmoke;
     background-clip: padding-box;
 }
 
 
 p.para {
-    color: var(--text-color);
-    font: normal 500 16px/25px var(--montserrat);
+    color: $text-color;
+    font: normal 500 16px/25px $montserrat;
 }
 
 .font-montserrat {
-    font-family: var(--montserrat);
+    font-family: $montserrat;
 }
 
 .navbar_fixed {
@@ -74,7 +74,7 @@ p.para {
     left: 0;
     right: 0;
     background: #ffffff;
-    box-shadow: var(--box-shadow);
+    box-shadow: $box-shadow;
     z-index: 999;
     transition: background .3s ease;
 }
