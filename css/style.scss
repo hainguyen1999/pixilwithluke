@@ -25,21 +25,21 @@
 }
 
 #header_area .main-menu .nav-item .nav-link {
-    font-family: $montserrat;
+    font-family: var(--montserrat);
     text-transform: uppercase;
     font-weight: 500;
     padding: 1.2rem;
-    color: $title-color;
+    color: var(--title-color);
 }
 
 #header_area .main-menu .navbar-nav .active a{
-    background: $gradient-color;
+    background: var(--gradient-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 #header_area .main-menu .navbar-nav a:hover{
-    background: $gradient-color;
+    background: var(--gradient-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -109,7 +109,7 @@
 
 .site-main #about-area .about-title h2 > span {
     display: block;
-    font: normal bold 49px/60px $montserrat;
+    font: normal bold 49px/60px var(--montserrat);
     letter-spacing: 21px;
 }
 
@@ -136,7 +136,7 @@
 }
 
 .site-main #artwork-area .artwork-title h1{
-    color: $primary-color2;
+    color: var(--primary-color2);
     font-size: 35px;
 }
 
@@ -157,17 +157,17 @@
 }
 
 .site-main #artwork-area .owl-carousel .owl-dots .owl-dot span {
-    background-color: $primary-color;
+    background-color: var(--primary-color);
     opacity: 0.5;
     transition: background ease .3s;
 }
 .site-main #artwork-area .owl-carousel .owl-dots .owl-dot span:hover {
-    background-color: $primary-color2;
+    background-color: var(--primary-color2);
     opacity: 1;
 }
 
 .site-main #artwork-area .owl-carousel .owl-dots .owl-dot.active span {
-    background-color: $primary-color2;
+    background-color: var(--primary-color2);
     opacity: 1;
     width: 23px;
     height: 13px;
@@ -226,7 +226,7 @@
 }
 
 .site-main > #services-area .services:hover{
-    box-shadow: $box-shadow;
+    box-shadow: var(--box-shadow);
 }
 /* End Services area */
 
@@ -242,7 +242,7 @@
 }
 .site-main #blog-area .blog-title h1 {
     font-size: 40px;
-    color: $primary-color2;
+    color: var(--primary-color2);
 }
 
 .site-main #blog-area .blog-list {
@@ -256,7 +256,7 @@
 }
 
 .site-main #blog-area .blog-list .blog-card:hover {
-    box-shadow: $box-shadow;
+    box-shadow: var(--box-shadow);
     
     
 }
@@ -272,22 +272,22 @@
 }
 
 .site-main #blog-area .blog-list .news-content .date{
-    font-family: $montserrat;
+    font-family: var(--montserrat);
     
 }
 
 .site-main #blog-area .blog-list .news-content h5{
-    font-family: $montserrat;
+    font-family: var(--montserrat);
     font-weight: bold;
-    color: $primary-color2;
+    color: var(--primary-color2);
 }
 .site-main #blog-area .blog-list .news-content a{
-    color: $primary-color2;
+    color: var(--primary-color2);
 }
 
 .site-main #blog-area .blog-list .news-content a:hover{
     text-decoration: none;
-    color: $primary-color;
+    color: var(--primary-color);
 }
 
 .site-main #blog-area .blog-link {
@@ -297,12 +297,12 @@
 }
 
 .site-main #blog-area .blog-link a {
-    color: $primary-color;
+    color: var(--primary-color);
 }
 
 .site-main #blog-area .blog-link a:hover {
     text-decoration: none;
-    color: $primary-color2;
+    color: var(--primary-color2);
 } 
 /*  End Blog Area */
 
@@ -332,7 +332,7 @@
 }
 
 .site-main #subscribe-us-area .subscribe .subscribe-title h4{
-    font: normal 700 30px/30px $montserrat;
+    font: normal 700 30px/30px var(--montserrat);
     color: whitesmoke;
 }
 
@@ -347,10 +347,10 @@
     border: 1px solid whitesmoke;
     background: transparent;
     color: white;
-    font: normal 500 17px/20px $montserrat;
+    font: normal 500 17px/20px var(--montserrat);
 }
 .site-main #subscribe-us-area .subscribe form .input-textbox input:hover{
-    box-shadow: $box-shadow;
+    box-shadow: var(--box-shadow);
 
 }
 .site-main #subscribe-us-area .subscribe form .input-textbox input::placeholder{
@@ -359,7 +359,7 @@
 
 .site-main #subscribe-us-area .subscribe form .btn-submit button{
     background: whitesmoke;
-    color: $primary-color2;
+    color: var(--primary-color2);
     padding: .7rem 2rem; 
     float: right;
     border: none;
@@ -367,8 +367,8 @@
 }
 
 .site-main #subscribe-us-area .subscribe form .btn-submit button:hover{
-    box-shadow: $box-shadow;
-    color: $primary-color;
+    box-shadow: var(--box-shadow);
+    color: var(--primary-color);
     
 }
 
@@ -388,7 +388,7 @@ footer#footer-area{
 }
 
 footer#footer-area .social h5{
-    font: normal 500 23px/30px $montserrat;
+    font: normal 500 23px/30px var(--montserrat);
     
 }
 footer#footer-area .social a> i{
@@ -399,7 +399,7 @@ footer#footer-area .social a> i{
 }
 
 footer#footer-area .social a:hover> i{
-    color: $primary-color;
+    color: var(--primary-color);
     
 }
 
