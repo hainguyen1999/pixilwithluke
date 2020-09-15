@@ -3,10 +3,10 @@
 @import url(./fonts.css);
 
 /*css variables*/
-@import url(./partials/_variables.scss);
+@import 'partials/variables';
 
 /*global*/
-@import url(./partials/_global.scss);
+@import 'partials/global';
 
 
 /* start navigation */
