@@ -109,7 +109,7 @@ p.para {
   background: #ffffff;
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
-  z-index: 999;
+  z-index: 1000;
   -webkit-transition: background .3s ease;
   transition: background .3s ease;
 }
